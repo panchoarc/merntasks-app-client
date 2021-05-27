@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Mern Tasks Client APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Live Demo WIP](https://confident-blackwell-6bbe12.netlify.app/)
 
-## Available Scripts
+## Capturas de Aplicación
 
-In the project directory, you can run:
+<br>
 
-### `yarn start`
+### Login
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://github.com/panchoarc/merntasks-app-client/blob/master/images/Login.PNG?raw=true" width="400" height="300" alt="Login">
 
-### `yarn test`
+<br><br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Crear Usuario
 
-### `yarn build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://github.com/panchoarc/merntasks-app-client/blob/master/images/CrearUsuario.PNG?raw=true" width="400" height="300" alt="Login">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br><br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Proyectos
 
-### `yarn eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="https://github.com/panchoarc/merntasks-app-client/blob/master/images/App.PNG?raw=true" width="600" height="300" alt="Login">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br><br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Tecnologías Utilizadas
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Create React App](https://create-react-app.dev/docs/getting-started/)
 
-## Learn More
+Herramienta oficial para la creación de SPA (Single Page Applications) utilizando react para la construcción rápida sin configuración.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Axios](https://github.com/axios/axios)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Cliente HTTP basado en promesas
 
-### Code Splitting
+- [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Framework que permite realizar pruebas e2e (End to end)
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Scripts Disponibles
 
-### Making a Progressive Web App
+### `npm start` o `yarn start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Nos permite iniciar la aplicación en modo desarrollo en el puerto 3000
 
-### Advanced Configuration
+### `npm run build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Nos permite crear el bundle de producción. Este bundle se localiza en **build**
 
-### Deployment
+### `npm run cy:open`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Nos permite iniciar la GUI de Cypress mostrandonos las pruebas escritas para su ejecución.
 
-### `yarn build` fails to minify
+## Capturas
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://github.com/panchoarc/merntasks-app-client/blob/master/images/DashboardCypress.PNG?raw=true" width="600" height="300" alt="Login">
+
+## Docker
+
+Si desea construir la aplicación en un contenedor de Docker, utilice la siguiente sintaxis:
+
+**_Para su construcción:_**
+
+```docker
+docker build -t <NombreAplicación> .
+```
+
+**_Para su despliegue:_**
+
+```docker
+docker run -dp puertocontenedor:puertomaquina --name <NombreContenedorAplicación> <NombreAplicación>
+```
